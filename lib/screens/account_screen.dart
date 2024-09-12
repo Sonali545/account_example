@@ -18,6 +18,7 @@ class _AccountScreenState extends State<AccountScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xff),
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {},
@@ -32,10 +33,11 @@ class _AccountScreenState extends State<AccountScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text(
-                "Settings",
+                "Welcome to Pulzion24!",
                 style: TextStyle(
                   fontSize: 36,
                   fontWeight: FontWeight.bold,
+                  color: Colors.teal
                 ),
               ),
               const SizedBox(height: 40),
@@ -43,6 +45,7 @@ class _AccountScreenState extends State<AccountScreen> {
                 "Account",
                 style: TextStyle(
                   fontSize: 24,
+                  color: Colors.white,
                   fontWeight: FontWeight.w500,
                 ),
               ),
@@ -57,15 +60,16 @@ class _AccountScreenState extends State<AccountScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Uranus Code",
+                          "ABC",
                           style: TextStyle(
                             fontSize: 18,
+                            color: Colors.white,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Youtube Channel",
+                          "Your Credentials",
                           style: TextStyle(
                             fontSize: 14,
                             color: Colors.grey,
@@ -92,6 +96,7 @@ class _AccountScreenState extends State<AccountScreen> {
                 "Settings",
                 style: TextStyle(
                   fontSize: 24,
+                  color: Colors.white,
                   fontWeight: FontWeight.w500,
                 ),
               ),
@@ -114,7 +119,7 @@ class _AccountScreenState extends State<AccountScreen> {
               ),
               const SizedBox(height: 20),
               SettingSwitch(
-                title: "Dark Mode",
+                title: "Music",
                 icon: Ionicons.earth,
                 bgColor: Colors.purple.shade100,
                 iconColor: Colors.purple,
@@ -127,7 +132,7 @@ class _AccountScreenState extends State<AccountScreen> {
               ),
               const SizedBox(height: 20),
               SettingItem(
-                title: "Help",
+                title: "Report a bug",
                 icon: Ionicons.nuclear,
                 bgColor: Colors.red.shade100,
                 iconColor: Colors.red,
